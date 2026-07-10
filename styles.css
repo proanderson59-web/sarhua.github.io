@@ -1,0 +1,891 @@
+body {
+    background-color: rgb(253, 249, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    flex-direction: column;
+    margin: 0;
+}
+
+.portada_principal {
+    position: relative;
+    background-color: rgb(65, 53, 38);
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+    line-height: 0;
+}
+
+.contenedor_imagen {
+    width: 100%;
+    height: 300px;
+    display: block;
+    filter: brightness(0.7);
+}
+
+.logo {
+    margin: 0;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(196, 180, 145);
+    font-size: 25px;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    white-space: nowrap;
+}
+
+nav {
+    padding: 12px;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    gap: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    color: rgb(10, 10, 10);
+}
+
+nav ul li ul li a:hover {
+    background-color: #080808;
+    color: #ffffff;
+}
+
+/* Inicio */
+.landing-esquema-general {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.landing-portada-magistral {
+    background-color: #1a1a1a; 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    border-bottom: 5px solid #8b0000; 
+}
+
+.landing-portada-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.landing-saludo {
+    display: block;
+    font-size: 22px;
+    color: #f39c12; 
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.landing-titulo-gigante {
+    font-size: 65px;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.landing-subtitulo {
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.landing-boton-accion {
+    display: inline-block;
+    background-color: #8b0000;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px; 
+    transition: background 0.3s ease;
+}
+
+.landing-boton-accion:hover {
+    background-color: #600000;
+}
+
+.landing-seccion-mision {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.landing-mision-titulo {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.landing-mision-texto {
+    font-size: 20px;
+    color: #555;
+}
+
+.landing-grilla-opciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 40px 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.landing-tarjeta-item {
+    background-color: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing-tarjeta-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.landing-tarjeta-nombre {
+    font-size: 24px;
+    color: #8b0000;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.landing-tarjeta-desc {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.landing-tarjeta-btn {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.landing-tarjeta-btn:hover {
+    background-color: #f39c12;
+    color: #1a1a1a;
+}
+
+.landing-franja-dato {
+    background-color: #8b0000;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.landing-dato-interior {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.landing-dato-resalte {
+    font-size: 32px;
+    color: #f39c12;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.landing-dato-info {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    margin: 0;
+}
+
+
+/* Cultura y Tradiciones */
+.cultura-premium-seccion {
+    background-color: #f0f4f8;
+    padding: 100px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cultura-premium-cabecera {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.cultura-premium-titulo {
+    font-size: 46px;
+    color: #111;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.cultura-premium-subtitulo {
+    font-size: 20px;
+    color: #666;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.cultura-premium-cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.cultura-premium-tarjeta {
+    background: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.02);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cultura-premium-tarjeta:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(139, 0, 0, 0.1);
+}
+
+.cultura-premium-imagen-caja {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.cultura-premium-imagen-caja img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.cultura-premium-tarjeta:hover .cultura-premium-imagen-caja img {
+    transform: scale(1.1);
+}
+
+.cultura-premium-imagen-caja.fondo-alterno {
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+}
+
+.cultura-premium-contenido {
+    padding: 40px 20px 25px 20px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.cultura-premium-icono-caja {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #8b0000, #c41e3a);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 8px 15px rgba(139, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.cultura-premium-tarjeta:hover .cultura-premium-icono-caja {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.cultura-premium-tema {
+    font-size: 24px;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.cultura-premium-tarjeta p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.cultura-premium-tarjeta p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Geografia */
+.contenedor1 {
+    display: flex;
+    align-items: flex-start; 
+    gap: 40px;              
+    background-color: #ffffff; 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    
+    max-width: 1200px;      
+    margin: 40px auto;       
+}
+
+.caja_img {
+    flex: 1;                
+    max-width: 500px;       
+}
+
+.caja_img img {
+    width: 100%;             
+    height: auto;
+    display: block;
+    border-radius: 8px;      
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); 
+    object-fit: cover;
+}
+
+.caja_texto {
+    flex: 1.2;            
+    font-family: "Times New Roman", Times, serif;
+    color: #333333;          
+}
+
+.caja_texto h2 {
+    text-align: left;
+    font-size: 28px;
+    font-family: Arial, sans-serif; 
+    color: #1a1a1a;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8b0000; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.caja_texto p {
+    font-size: 18px;         
+    line-height: 1.8;        
+    text-align: justify;     
+    margin-top: 0;
+    margin-bottom: 20px;    
+}
+
+@media (max-width: 900px) {
+    .contenedor1 {
+        flex-direction: column; 
+        padding: 25px;
+        gap: 25px;
+    }
+    
+    .caja_img {
+        max-width: 100%;
+    }
+}
+.pie-foto {
+    font-size: 14px;       
+    color: #666666;            
+    text-align: center;       
+    margin-top: 12px;         
+    font-style: italic;        
+    font-family: Arial, sans-serif; 
+    padding: 0 10px;           
+}
+
+
+
+
+
+/* Catalogo*/
+.tienda-principal {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.tienda-principal h1.tienda-titulo, 
+.tienda-principal h2.tienda-titulo, 
+.tienda-principal h3.tienda-titulo {
+    text-align: center;
+}
+
+.tienda-productos-caja {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.tienda-item {
+    width: 220px;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tienda-item-titulo {
+    color: darkblue;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.tienda-item-precio {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tienda-btn-agregar,
+.tienda-btn-vaciar,
+.tienda-btn-eliminar {
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.tienda-btn-agregar {
+    background: green;
+}
+.tienda-btn-agregar:hover {
+    background: darkgreen;
+}
+
+.tienda-btn-vaciar {
+    background: red;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+.tienda-btn-vaciar:hover {
+    background: darkred;
+}
+
+.tienda-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.tienda-lista li {
+    background: #fafafa;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.tienda-btn-eliminar {
+    float: right;
+    background: crimson;
+    padding: 5px 10px;
+    margin-top: -5px; 
+}
+.tienda-btn-eliminar:hover {
+    background: darkred;
+}
+
+
+
+
+
+/* Comunidad y Sociedad */
+.comunidad-seccion {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.comunidad-cabecera {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.comunidad-titulo {
+    font-size: 38px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.comunidad-subtitulo {
+    font-size: 18px;
+    color: #555555;
+    font-style: italic;
+}
+
+.comunidad-contenedor {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.comunidad-texto-principal {
+    width: 45%;
+}
+
+.comunidad-texto-principal h3 {
+    font-size: 28px;
+    color: #8b0000;
+}
+
+.comunidad-texto-principal p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.comunidad-pilares {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.comunidad-pilar {
+    background-color: #f4f4f4;
+    padding: 15px;
+    width: 45%;
+    border-radius: 8px;
+    border-left: 5px solid #8b0000;
+}
+
+.comunidad-pilar i {
+    font-size: 24px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.comunidad-pilar h4 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.comunidad-imagen {
+    width: 45%;
+    position: relative;
+}
+
+.comunidad-imagen img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.comunidad-recuadro-destacado {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 260px;
+}
+
+.comunidad-recuadro-destacado h4 {
+    color: #f39c12;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .comunidad-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .comunidad-texto-principal {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .comunidad-imagen {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .comunidad-recuadro-destacado {
+        position: static;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+
+/* Naturaleza */
+.naturaleza-seccion {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.naturaleza-cabecera {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.naturaleza-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.naturaleza-enlace {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.naturaleza-boton {
+    display: inline-block;
+    background-color: #8b0000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* Flora */
+.naturaleza-tabla {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.naturaleza-tabla th, .naturaleza-tabla td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.naturaleza-tabla th {
+    background-color: #8b0000;
+    color: white;
+}
+
+.naturaleza-tabla img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .naturaleza-tabla { font-size: 14px; }
+    .naturaleza-tabla img { width: 80px; height: 60px; }
+}
+
+/* Contactos */
+.contacto-titulo {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contacto-parrafo{
+    text-align: center;
+}
+.contacto-seccion {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.contacto-contenedor {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.quienes-somos, .formulario-contacto {
+    width: 45%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.formulario-contacto input, 
+.formulario-contacto select, 
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.boton-enviar {
+    background-color: #8b0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.boton-enviar:hover {
+    background-color: #5d0000;
+}
+
+@media (max-width: 768px) {
+    .contacto-contenedor { flex-direction: column; }
+    .quienes-somos, .formulario-contacto { width: 90%; margin-bottom: 20px; }
+}
+
+
+
+/* Este es el derecho de autor */
+.pie-pagina {
+    width: 100%;
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    padding: 50px 0 20px 0; 
+    box-sizing: border-box;
+    margin-top: 60px; 
+}
+
+.contenedor-footer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie-pagina h3 {
+    margin: 0 0 25px 0;
+    font-size: 24px;
+    font-family: Arial, sans-serif; 
+    letter-spacing: 1px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;              
+    margin-bottom: 30px;
+}
+
+.icono-imagen {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: all 0.3s ease; 
+}
+
+.icono-enlace:hover .icono-imagen {
+    transform: translateY(-8px) scale(1.15);
+    filter: drop-shadow(0px 8px 12px rgba(255, 255, 255, 0.3));
+}
+
+.icono-enlace {
+    text-decoration: none;
+}
+
+.derechos {
+    font-size: 14px;
+    color: #888888;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #333333; 
+    padding-top: 20px; 
+}

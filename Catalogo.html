@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <header class="portada_principal">
+
+        <img src="carpeta_img/2-1.jpg" class="contenedor_imagen" alt="este es una imagen de sarhua">
+        <h1 class="logo">SARHUA</h1>
+
+        <nav class="menu_principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="Geografia.html">Geografía</a></li>
+
+                <li><a href="Cultura.html">Cultura y Tradiciones</a></li>
+
+                <li>
+                    <a href="Naturaleza.html">Naturaleza</a>
+                    <ul>
+                        <li><a href="Flora.html">Flora</a></li>
+                        <li><a href="Fauna.html">Fauna</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="Sociedad.html">Sociedad y Comunidad</a></li>
+
+                <li>
+                    <a href="Catalogo.html">Catálogo</a>
+                    <ul>
+                        <li><a href="#">Sombreros</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="Contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tienda-principal">
+
+        <h1 class="tienda-titulo">Carrito de Compras</h1>
+
+        <div class="tienda-productos-caja">
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">sombrero</h2>
+                <p class="tienda-item-precio">Precio: S/. 50</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToacn9F96Wwg-XxIBnJB0-ynVXjc0Q0ilkTcF_EnHjqpcCZvmZ0ndidxGx&s=10"
+                    alt="sombrero" class="tienda-item-imagen" width="200" height="200">
+
+                <button class="tienda-btn-agregar" onclick="agregarProducto('sombrero',50)">Agregar</button>
+            </div>
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">sombrero decarado</h2>
+                <p class="tienda-item-precio">Precio: S/. 200</p>
+                <img src="https://scontent.flim6-2.fna.fbcdn.net/v/t39.30808-6/476454854_1174605004295160_7132451851736862658_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFV6wKiCaFftaYK-6RVAyrIHXaFwGuV2hoddoXAa5XaGh-Xp5O-m1hLmlVKDJjOpTAqpwI8yzPPfC_LtPhgBBca&_nc_ohc=T0gS86bvZT8Q7kNvwGpLoYD&_nc_oc=Adq9Iiiqtvp1TXZ-H0YTaeNK4Ej5wh0RuYe-8_29Dt2wSiCxfKyYO1rFbF-U8BtsAso&_nc_zt=23&_nc_ht=scontent.flim6-2.fna&_nc_gid=CUmevHpXhCg6tJ_nYM1EKQ&_nc_ss=7b2a8&oh=00_AQBTzYtwsBDD5kg3PNBASsHOilq_6JtlxGZmVa4UePsDNw&oe=6A5260AC"
+                    alt="sombrero decarado" class="tienda-item-imagen" width="200" height="200">
+
+                <button class="tienda-btn-agregar" onclick="agregarProducto('sombrero decarado',200)">Agregar</button>
+            </div>
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">sombrero con decoracion</h2>
+                <p class="tienda-item-precio">Precio: S/. 350</p>
+                <img src="https://scontent.flim6-4.fna.fbcdn.net/v/t39.30808-6/476447582_1174605014295159_360466253356319409_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1651&ctp=s2048x1651&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGqTqp65nbf4LuSFoznSlQNG4LJifnZr_MbgsmJ-dmv8_8Ms-0jAdGxSYwpyFfhKAV9pVtoi-0hUOdiN9ExCDSt&_nc_ohc=bazWJ3O2mi4Q7kNvwHfLdHt&_nc_oc=Ado6LveXGSryKAzgcTj_joEvmxHeu8oxRBmFN9FmKf85eGs2TC3qspy6O78ykzTTAEU&_nc_zt=23&_nc_ht=scontent.flim6-4.fna&_nc_gid=hUo8W91TVZYnQs5roZemkA&_nc_ss=7b2a8&oh=00_AQCHcf6pwtWVqwkUkkMmHwfZn_443loMSt6iHfCamyb1Yw&oe=6A52309F"
+                    alt="sombrero con decoracion" class="tienda-item-imagen" width="200" height="200">
+
+                <button class="tienda-btn-agregar"
+                    onclick="agregarProducto('sombrero con decoracion',350)">Agregar</button>
+            </div>
+
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">blusa para damas</h2>
+                <p class="tienda-item-precio">Precio: S/. 350</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQROg_suy8qdF_4w89K3_7_oy5KGQniar08bOYbD1tJqa_kpccEQSrEAUe&s=10"
+                    alt="blusa para damas" class="tienda-item-imagen" width="200" height="200">
+                <button class="tienda-btn-agregar" onclick="agregarProducto('blusa para damas',350)">Agregar</button>
+            </div>
+
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">Polleras</h2>
+                <p class="tienda-item-precio">Precio: S/. 1300</p>
+                <img src="https://ruraqmaki.pe/sites/default/files/styles/noticia_interna/public/noticias/imagenes/2022-11/297177890_3264771550448041_2635664569200305732_n.jpg?itok=XX9P4Nwy"
+                    alt="polleras para damas" class="tienda-item-imagen" width="200" height="200">
+                <button class="tienda-btn-agregar" onclick="agregarProducto('Polleras',1300)">Agregar</button>
+            </div>
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">Polleras</h2>
+                <p class="tienda-item-precio">Precio: S/. 1000</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHxwlmkzoIfBsHswK2GSEp_heNYSW2N0grGznjxcVul-tZ0OXmxX2HeS4&s=10"
+                    alt="polleras para damas" class="tienda-item-imagen" width="200" height="200">
+                <button class="tienda-btn-agregar" onclick="agregarProducto('Polleras',1000)">Agregar</button>
+            </div>
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">Poncho de lana hecha a mano color basico</h2>
+                <p class="tienda-item-precio">Precio: S/. 1500</p>
+                <img src="https://s1.img.bidsquare.com/item/xl/2948/2948217.jpeg" alt="Poncho de lana hecha a mano"
+                    class="tienda-item-imagen" width="200" height="200">
+                <button class="tienda-btn-agregar"
+                    onclick="agregarProducto('Poncho de lana hecha a mano',1500)">Agregar</button>
+            </div>
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">Poncho de lana hecha a mano con colores</h2>
+                <p class="tienda-item-precio">Precio: S/. 1850</p>
+                <img src="https://huancaraylla.com.pe/wp-content/uploads/2022/05/sarhua-9.jpg"
+                    alt="Poncho de lana hecha a mano colorida " class="tienda-item-imagen" width="200" height="200">
+                <button class="tienda-btn-agregar"
+                    onclick="agregarProducto('Poncho de lana hecha a mano con colores',1850)">Agregar</button>
+            </div>
+
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">tabla de sarhua pequeña hecha a mano</h2>
+                <p class="tienda-item-precio">Precio: S/. 15</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKvAQxhR5iWsxptG2Pj4FKpXblm7XHjEcfxyAhYhX7-kyfnIpU0HU3P6s&s=10"
+                    alt="una tabla de sarhua hecha a mano" class="tienda-item-imagen" width="200" height="200">
+                <button class="tienda-btn-agregar"
+                    onclick="agregarProducto('tabla de sarhua hecha a mano',15)">Agregar</button>
+            </div>
+
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">tabla de sarhua grande hecha a mano</h2>
+                <p class="tienda-item-precio">Precio: S/. 45</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_BNDjy6UpvUL7_eSGYPRJveyFL2uMwJshcoxvtrbnT2bMSSMPzX_1Is&s=10"
+                    alt="una tabla de sarhua hecha a mano" class="tienda-item-imagen" width="200" height="200">
+                <button class="tienda-btn-agregar"
+                    onclick="agregarProducto('tabla de sarhua grande hecha a mano',45)">Agregar</button>
+            </div>
+
+            <div class="tienda-item">
+                <h2 class="tienda-item-titulo">Porta lapicero hecha a mano</h2>
+                <p class="tienda-item-precio">Precio: S/. 40</p>
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800,h_800/https://tablasdesarhua.com/wp-content/uploads/2020/12/ps001.jpg"
+                    alt="porta lapicero " class="tienda-item-imagen" width="200" height="200">
+                <button class="tienda-btn-agregar"
+                    onclick="agregarProducto('Porta lapicero hecha a mano',40)">Agregar</button>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <div class="tienda-carrito-seccion">
+            <h2 class="tienda-titulo">Mi Carrito</h2>
+
+            <ul id="listaCarrito" class="tienda-lista"></ul>
+
+            <h3 class="tienda-titulo">Total: S/. <span id="total">0</span></h3>
+            <button class="tienda-btn-vaciar" onclick="vaciarCarrito()">Vaciar</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <h3>Conéctate con nosotros</h3>
+
+            <div class="redes-sociales">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/51932170932" target="_blank" class="icono-enlace">
+                    <img src="carpeta_img/whatsaap2.jpg" alt="WhatsApp" class="icono-imagen">
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://facebook.com/anderson.parco.192010" target="_blank" class="icono-enlace">
+                    <img src="carpeta_img/facebook.jpg" alt="Facebook" class="icono-imagen">
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/parco910" target="_blank" class="icono-enlace">
+                    <img src="carpeta_img/instagran.jpg" alt="Instagram" class="icono-imagen">
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://tiktok.com/@parco_poma" target="_blank" class="icono-enlace">
+                    <img src="carpeta_img/tiktok.jpg" alt="TikTok" class="icono-imagen">
+                </a>
+            </div>
+
+            <p class="derechos">© 2026 Anderson Parco Pomacanchari. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
